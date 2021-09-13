@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'E:\Tekle\@Main\Simba\Hospital_Sheduling\my-sheduler\node_modules\prisma\query_engine-windows.dll.node'
+  Error: EPERM: operation not permitted, unlink 'E:\Tekle\@Main\Simba\Hospital_Sheduling\my-sheduler\node_modules\@prisma\engines\query_engine-windows.dll.node'
 
 npm manifest: 
   {
