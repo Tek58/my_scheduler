@@ -14,8 +14,9 @@ model Event {
   location      String?
   startTime     DateTime
   endTime       DateTime
-  owner     User?       @relation(fields: [userId], references: [id])
+  owner         User?     @relation(fields: [userId], references: [id])
   userId        Int?
+  atendees      Atendees[]
 }
 
 model User {
@@ -27,4 +28,10 @@ model User {
   events        Event[]
 }
 
-
+model Atendees {
+  id            Int       @id @default(autoincrement())
+  name          String?
+  event         Event     @relation(fields: [eventId], references: [id])
+  eventId       Int
+  email         String  
+}
