@@ -35,9 +35,6 @@ const configuration = {
       },
     }),
   ],
-  pages: {
-    signIn: '/login',
-  },
   session: {
     jwt: true,
   },
